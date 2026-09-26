@@ -19,6 +19,7 @@ import java.util.function.Supplier;
 public enum JacketMaterial implements ArmorMaterial {
     //                                                           прочность(x) броня прочность зачарование ремонт
     STALKER   ("jacket_stalker",   20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
+    WHITE     ("jacket_white",     20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
     VETERAN   ("jacket_veteran",   25, 12, 1.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.UNCOMMON),
     BANDITS   ("jacket_bandits",   22, 10, 1.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.UNCOMMON),
     RENEGADE  ("jacket_renegade",  23, 11, 1.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.UNCOMMON),

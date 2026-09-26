@@ -10,6 +10,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, StalkerJackets.MOD_ID);
 
     public static final RegistryObject<Item> JACKET_STALKER = register(JacketMaterial.STALKER, false);
+    public static final RegistryObject<Item> JACKET_WHITE = register(JacketMaterial.WHITE, false);
     public static final RegistryObject<Item> JACKET_VETERAN = register(JacketMaterial.VETERAN, false);
     public static final RegistryObject<Item> JACKET_BANDITS = register(JacketMaterial.BANDITS, false);
     public static final RegistryObject<Item> JACKET_RENEGADE = register(JacketMaterial.RENEGADE, false);

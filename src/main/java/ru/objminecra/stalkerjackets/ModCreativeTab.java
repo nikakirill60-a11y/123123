@@ -17,6 +17,7 @@ public class ModCreativeTab {
                     .title(Component.translatable("itemGroup.stalkerjackets"))
                     .displayItems((params, output) -> {
                         output.accept(ModItems.JACKET_STALKER.get());
+                        output.accept(ModItems.JACKET_WHITE.get());
                         output.accept(ModItems.JACKET_VETERAN.get());
                         output.accept(ModItems.JACKET_BANDITS.get());
                         output.accept(ModItems.JACKET_RENEGADE.get());
