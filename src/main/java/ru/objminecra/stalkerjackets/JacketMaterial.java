@@ -19,11 +19,22 @@ import java.util.function.Supplier;
 public enum JacketMaterial implements ArmorMaterial {
     //                                                           прочность(x) броня прочность зачарование ремонт
     STALKER   ("jacket_stalker",   20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
+    STALKER_1 ("jacket_stalker_1", 20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
+    STALKER_2 ("jacket_stalker_2", 20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
+    STALKER_3 ("jacket_stalker_3", 20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
+    STALKER_4 ("jacket_stalker_4", 20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
+    STALKER_5 ("jacket_stalker_5", 20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
+    STALKER_6 ("jacket_stalker_6", 22, 8,  0.5F, 0.00F, 13, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.UNCOMMON),
+    STALKER_7 ("jacket_stalker_7", 20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
     WHITE     ("jacket_white",     20, 7,  0.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.COMMON),
     VETERAN   ("jacket_veteran",   25, 12, 1.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.UNCOMMON),
     BANDITS   ("jacket_bandits",   22, 10, 1.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.UNCOMMON),
+    BANDITS_2 ("jacket_bandits_2", 22, 10, 1.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.UNCOMMON),
+    BANDITS_3 ("jacket_bandits_3", 22, 10, 1.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.UNCOMMON),
     RENEGADE  ("jacket_renegade",  23, 11, 1.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.LEATHER),   Rarity.UNCOMMON),
     CS        ("jacket_cs",        26, 14, 1.0F, 0.00F, 12, SoundEvents.ARMOR_EQUIP_IRON,    () -> Ingredient.of(Items.IRON_INGOT), Rarity.RARE),
+    MERC      ("jacket_merc",      28, 15, 1.5F, 0.05F, 13, SoundEvents.ARMOR_EQUIP_IRON,    () -> Ingredient.of(Items.IRON_INGOT), Rarity.RARE),
+    MILITARY  ("jacket_military",  32, 18, 2.0F, 0.05F, 14, SoundEvents.ARMOR_EQUIP_IRON,    () -> Ingredient.of(Items.IRON_INGOT), Rarity.RARE),
     FREEDOM   ("jacket_freedom",   30, 16, 2.0F, 0.05F, 14, SoundEvents.ARMOR_EQUIP_IRON,    () -> Ingredient.of(Items.IRON_INGOT), Rarity.RARE),
     DOLG      ("jacket_dolg",      35, 20, 3.0F, 0.10F, 15, SoundEvents.ARMOR_EQUIP_DIAMOND, () -> Ingredient.of(Items.DIAMOND),    Rarity.EPIC);
 

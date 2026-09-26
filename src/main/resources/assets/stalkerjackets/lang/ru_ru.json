@@ -8,6 +8,17 @@
   "item.stalkerjackets.jacket_cs": "Куртка «Чистого неба»",
   "item.stalkerjackets.jacket_freedom": "Куртка «Свободы»",
   "item.stalkerjackets.jacket_dolg": "Куртка «Долга»",
+  "item.stalkerjackets.jacket_stalker_1": "Куртка сталкера №1",
+  "item.stalkerjackets.jacket_stalker_2": "Куртка сталкера №2",
+  "item.stalkerjackets.jacket_stalker_3": "Куртка сталкера №3",
+  "item.stalkerjackets.jacket_stalker_4": "Куртка сталкера №4",
+  "item.stalkerjackets.jacket_stalker_5": "Куртка сталкера №5",
+  "item.stalkerjackets.jacket_stalker_6": "Куртка сталкера №6",
+  "item.stalkerjackets.jacket_stalker_7": "Куртка сталкера №7",
+  "item.stalkerjackets.jacket_bandits_2": "Куртка бандита №2",
+  "item.stalkerjackets.jacket_bandits_3": "Куртка бандита №3",
+  "item.stalkerjackets.jacket_merc": "Куртка наёмника",
+  "item.stalkerjackets.jacket_military": "Куртка военных",
   "tooltip.stalkerjackets.fullset": "Полный комплект брони в одном предмете",
   "tooltip.stalkerjackets.slot": "Надевается в слот нагрудника"
 }
