@@ -14,26 +14,37 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import ru.objminecra.stalkerjackets.client.JacketArmorModel;
+import ru.objminecra.stalkerjackets.client.ZaryaArmorModel;
 
 import java.util.List;
 import java.util.function.Consumer;
 
 /**
- * Куртка: надевается в слот нагрудника, но рендерит ВЕСЬ костюм (голова/тело/руки/ноги)
+ * Куртка / Броня: надевается в слот нагрудника, но рендерит ВЕСЬ костюм (голова/тело/руки/ноги)
  * по OBJ-модели и даёт защиту полного комплекта.
  */
 public class JacketItem extends ArmorItem {
     private final String armorTexture;
     private final JacketMaterial jacketMaterial;
+    private final boolean isZarya;
 
     public JacketItem(JacketMaterial material, Properties properties) {
+        this(material, properties, false);
+    }
+
+    public JacketItem(JacketMaterial material, Properties properties, boolean isZarya) {
         super(material, Type.CHESTPLATE, properties);
         this.jacketMaterial = material;
+        this.isZarya = isZarya;
         this.armorTexture = StalkerJackets.MOD_ID + ":textures/entity/" + material.getRegName() + ".png";
     }
 
     public JacketMaterial getJacketMaterial() {
         return jacketMaterial;
+    }
+
+    public boolean isZarya() {
+        return isZarya;
     }
 
     @Override
@@ -51,14 +62,19 @@ public class JacketItem extends ArmorItem {
     @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
         consumer.accept(new IClientItemExtensions() {
-            private JacketArmorModel model;
+            private HumanoidModel<?> model;
 
             @Override
             public HumanoidModel<?> getHumanoidArmorModel(LivingEntity entity, ItemStack stack,
                                                           EquipmentSlot slot, HumanoidModel<?> fallback) {
                 if (model == null) {
-                    model = new JacketArmorModel(
-                            Minecraft.getInstance().getEntityModels().bakeLayer(ModelLayers.PLAYER_INNER_ARMOR));
+                    if (isZarya) {
+                        model = new ZaryaArmorModel(
+                                Minecraft.getInstance().getEntityModels().bakeLayer(ModelLayers.PLAYER_INNER_ARMOR));
+                    } else {
+                        model = new JacketArmorModel(
+                                Minecraft.getInstance().getEntityModels().bakeLayer(ModelLayers.PLAYER_INNER_ARMOR));
+                    }
                 }
                 // Копируем позу (повороты/пивоты) с модели сущности, затем принудительно
                 // показываем ВСЕ части тела: один слот нагрудника рисует весь костюм.
